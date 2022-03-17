@@ -1,0 +1,53 @@
+/*************** header ******************/ 
+.container__master__root {
+  width: 100%; 
+  height: 100vh;      
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+
+.container__header__one {
+  background-color: #1CD1B0;   
+} 
+
+.container__header__one__child { 
+  width: 1260px;  
+  margin: 0 auto;  
+}
+
+.container__header__two {
+  background-color: #00669F;  
+}
+
+.container__header__two__child {
+  height: 80px; 
+  width: 1260px;       
+  margin: 0 auto;  
+}
+
+.image__and__title {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;  
+}
+
+.image__logo {
+  margin-right: 15px; 
+}
+
+.title__home {
+  font-size: 30px;
+  font-weight: 400; 
+  color: #fff;
+}
+
+/******************** main ********************/
+.container__main {
+  border: 1px solid black;
+}
+.container__main__child {
+  width: 1260px; 
+  margin: 0 auto; 
+  align-self: stretch;  
+} 
