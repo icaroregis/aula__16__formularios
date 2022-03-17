@@ -116,3 +116,41 @@
 .title__footer__child {
   color: #fff;
 }
+
+@media(max-width: 1260px) {
+  .container__header__one__child {
+    width: 95%; 
+  }
+
+  .container__header__two__child {
+    width: 95%;  
+  }
+
+  .container__main__child {
+    width: 95%; 
+  } 
+
+  .container__footer__child { 
+    width: 95%;
+  }
+}
+
+@media(max-width: 699px) {
+  .input__form {
+    width: 400px;     
+  }
+
+  .button__open {
+    width: 400px;  
+  } 
+}
+
+@media(max-width: 470px) {
+  .input__form {
+    width: 300px;     
+  }
+
+  .button__open {
+    width: 300px;   
+  } 
+}
