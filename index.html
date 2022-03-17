@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css_reset/css_reset.css">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Petshop Almeida</title>
+  <title>Formulários Frontend I</title>
 </head>
 
 <body>
@@ -34,18 +34,25 @@
 
     <main class="container__main">
       <div class="container__main__child">
-        <h1>Login</h1>
+        <div>
+          <h1 class="title__main__child">Login</h1>
+          <form class="login__form">
+            <input class="input__form" type="text" placeholder="usuário">
+            <input class="input__form" type="password" placeholder="senha">
+          </form>
 
-        <form>
-          <input type="text" placeholder="usuário">
-          <input type="password" placeholder="senha">
-        </form>
+          <div class="container__button__register">
+            <button class="button__open">Entrar</button>
+            <p>Não possui conta? <a class="link__button" href="#">Registre-se</a></p>
+          </div>
+        </div>
       </div>
-
     </main>
 
-    <footer>
-      <div>teste de footer</div>
+    <footer class="container__footer">
+      <div class="container__footer__child">
+        <div class="title__footer__child">Todos os direitos reservados a frontend I</div>
+      </div>
     </footer>
   </div>
 </body>

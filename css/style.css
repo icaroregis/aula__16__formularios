@@ -1,7 +1,7 @@
 /*************** header ******************/ 
 .container__master__root {
   width: 100%; 
-  height: 100vh;      
+  height: 100vh;       
   display: flex;
   flex-direction: column;
   justify-content: space-between;  
@@ -42,12 +42,77 @@
   color: #fff;
 }
 
-/******************** main ********************/
-.container__main {
-  border: 1px solid black;
-}
+/******************** main ********************/ 
 .container__main__child {
   width: 1260px; 
   margin: 0 auto; 
   align-self: stretch;  
+  display: flex;
+  justify-content: center; 
 } 
+
+.title__main__child {
+  font-size: 72px; 
+  font-weight: 700 bold; 
+  text-align: start; 
+  margin-bottom: 35px;   
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;   
+}
+
+.input__form {
+  width: 620px;
+  height: 60px; 
+  margin-bottom: 20px; 
+  padding-left: 20px; 
+}
+
+.input__form::placeholder {  
+  font-size: 20px;  
+}
+
+.container__button__register {
+  margin-top: 25px;    
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;  
+}
+
+.button__open {
+  margin-bottom: 20px; 
+  width: 620px; 
+  height: 54px; 
+  background-color: #1CD1B0; 
+  border-radius: 5rem; 
+  font-size: 20px; 
+  font-weight: 600; 
+  border: none;
+  cursor: pointer; 
+}
+
+.link__button {
+  color: #00669F;
+  text-decoration: none; 
+}
+
+/******************* footer ****************************/
+.container__footer {
+  background-color: #00669F;  
+}
+
+.container__footer__child {
+  width: 1260px;  
+  height: 61px;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.title__footer__child {
+  color: #fff;
+}
