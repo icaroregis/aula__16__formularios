@@ -2,9 +2,9 @@
 .container__master__root {
   width: 100%; 
   height: 100vh;       
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;  
+  display: flex; /* em linha */ 
+  flex-direction: column; 
+  justify-content: space-between;   
 }
 
 .container__header__one {
@@ -13,7 +13,7 @@
 
 .container__header__one__child { 
   width: 1260px;  
-  margin: 0 auto;  
+  margin: 0 auto;    
 }
 
 .container__header__two {
@@ -134,7 +134,7 @@
     width: 95%;
   }
 }
-
+/* 0 a 699 */
 @media(max-width: 699px) {
   .input__form {
     width: 400px;     
@@ -145,6 +145,7 @@
   } 
 }
 
+/* 0 a 470 */ 
 @media(max-width: 470px) {
   .input__form {
     width: 300px;     
