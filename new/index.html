@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/darkmode.css">
+  <title>Formulários Frontend I</title>
+</head>
+<body>
+  <header class="main__header">
+    <section class="notifications">
+      <p>20% de desconto em todos os produtos!</p>
+    </section>
+    <section class="topbar">
+      <div class="topbar__container">
+        <div class="brand">
+          <img class='brand__logo' src="images/logo.svg" alt="Logo do site">
+          <h1 class="brand__name">Icaros Tech</h1>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="main__content">
+    <div class="main__container">
+      <section class="login__form">
+        <form action="#" class="form">
+          <h2 class='form__title'>Login</h2>
+          <div class="input-group">
+            <label for="username">Usuário</label>
+            <input type="text" id='username' name="username" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Senha</label>
+            <input type="password" id='password' name="password" required>
+          </div>
+          <input type="submit" value="Entrar" class='form__submit'>
+          <small class="form__help">Não possui conta? <a class='form__link' href="#">Registre-se</a></small>
+        </form>
+      </section>    
+    </div>
+  </main>
+  <footer class="main__footer">
+    <div class="footer__disclaimer">
+      <p>&copy; 2022 - Icaros Tech - Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>

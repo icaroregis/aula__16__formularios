@@ -1,0 +1,105 @@
+/* Barra de notificações*/
+.notifications {
+  background-color: var(--notifications__background-color, #7fffd4);
+  padding-block: 0.5rem;
+  text-align: center;
+  font-weight: var(--font__medium);
+  height: 3.6rem;
+}
+/* Seções principais*/
+.main__header {
+  background-color: var(--main-header__background-color, #00669f);
+  height: calc(3.6rem + 11.4rem);
+}
+.main__content {
+  min-height: calc(100% - 15rem - 8rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.main__footer {
+  background-color: var(--main-footer__background-color, #00669f);
+  height: 8rem;
+  display: flex;
+  align-items: stretch;
+}
+/*TOPBAR*/
+.topbar__container {
+  padding-block: 2rem;
+  max-width: var(--layout__max-width);
+  margin-inline: auto;
+  height: var(--topbar__height, 11.4rem);
+}
+/* Brand */
+.brand {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.brand__logo {
+  margin-right: 3rem;
+}
+.brand__name {
+  color: var(--brand-name__font-color, #fff);
+  font-weight: var(--font__light);
+}
+/* Form */
+.form__title {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+.form__submit {
+  unset: all;
+  width: 100%;
+  border: 0;
+  height: 4.5rem;
+  border-radius: 4.5rem;
+  font-size: 2.2rem;
+  font-weight: var(--font__bold);
+  color: var(--submit-button__font-color, #fff);
+  background-color: var(--submit-button__background-color, #1cd1b0);
+  margin-block: 2rem;
+  text-shadow: 0 0 1px #666;
+  cursor: pointer;
+}
+.form__link {
+  color: var(--form-link__font-color, #00669f);
+  text-decoration: none;
+}
+.form__link:hover,
+.form__link:focus {
+  text-decoration: underline;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.input-group label {
+  font-size: 1.4rem;
+}
+.input-group input:not(.submit) {
+  border-radius: 0.4rem;
+  border: var(--input__border, 1px solid #999);
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: var(--input__font-color, #444);
+  background-color: var(--input__background-color, #fff);
+}
+/* Footer disclaimer*/
+.footer__disclaimer {
+  text-align: center;
+  padding-inline: 1.5rem;
+  width: 100%;
+  color: var(--footer-disclaimer__font-color, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

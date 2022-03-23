@@ -1,0 +1,8 @@
+.dark {
+  --color__background--default: #222;
+  --color__text--default: #aaa;
+  --notifications__background-color: #111;
+  --main-header__background-color: #555;
+  --main-footer__background-color: #555;
+  --form-link__font-color: #fff;
+}
