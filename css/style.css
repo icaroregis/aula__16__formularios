@@ -1,3 +1,18 @@
+/* 
+Já comentei sobre os "Containers".
+Veja que aqui no teu CSS esse termo 
+'container' aparece 13 vezes. Isso dificulta
+a compreensão do elemento real que estamos
+trabalhando. Por isso classes mais descritivas
+são melhores.
+
+ex.
+
+.topbar {...}
+.topbar__container {...}
+.topbar__header {...}
+*/
+
 /*************** header ******************/ 
 .container__master__root {
   width: 100%; 

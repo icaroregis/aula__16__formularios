@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Evite usar muitos estilos de fonte. Use somente o que você usa. Muitos estilos demoram mais para carregar a página e podem gerar código inútil -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <!-- isso não precisa ficar numa pasta separada -->
   <link rel="stylesheet" href="./css_reset/css_reset.css">
+  
+  <!-- Tente juntar todos os estilos numa pasta só. Ex. styles -->
   <link rel="stylesheet" href="./css/style.css">
   <title>Formulários Frontend I</title>
 </head>
 
 <body>
+
+  <!-- Você não precisa nomear toda div ou section com "container". É redundante. use nome de classes mais auto-descritivas. Ex. topbar -->
   <div class="container__master__root">
     <header>
+      <!-- Tente usar a metodologia BEM para nomear as classes. https://desenvolvimentoparaweb.com/css/bem/ -->
       <section class="container__header__one">
         <div class="container__header__one__child">
           <p>20% de desconto em todos os produtos!</p>
@@ -23,9 +30,11 @@
       </section>
 
       <section class="container__header__two">
+        <!-- Cuidado para não exagerar nas divs. Busque sempre um código mais limpo e conciso -->
         <div class="container__header__two__child">
           <div class="image__and__title">
             <img class='image__logo' src="./assets/imgs/logo_1.svg" alt="Logo do site">
+            <!-- Tenha atenção ao uso correto das tags. Não é legal ter 2 h1 na mesma página. Seu código além de limpo precisa ser semântico e de fácil compreensão. Principalmente do papel de cada elemento dentro do código. -->
             <h1 class="title__home">Nome da Loja</h1>
           </div>
         </div>
@@ -34,15 +43,20 @@
 
     <main class="container__main">
       <div class="container__main__child">
+        <!-- Porque essa div vazia? -->
         <div>
           <h1 class="title__main__child">Login</h1>
           <form class="login__form">
+            <!-- Não use inputs sem labels. Detona a acessibilidade e torna o código menos semântico. -->
             <input class="input__form" type="text" placeholder="usuário">
+            <!-- Usar o placeholder como label é uma má prática. https://www.felipefialho.com/blog/nao-use-placeholder-no-lugar-da-label/ -->
             <input class="input__form" type="password" placeholder="senha">
           </form>
 
           <div class="container__button__register">
+            <!-- Button tá fora do form. Nesse caso você pode usar o <input type='submit'> -->
             <button class="button__open">Entrar</button>
+            <!-- conhece a tag <small>? Como diriam meus amigos paulistas... da hora!-->
             <p>Não possui conta? <a class="link__button" href="#">Registre-se</a></p>
           </div>
         </div>

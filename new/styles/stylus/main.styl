@@ -1,0 +1,112 @@
+// Este é um exemplo do estilo da
+// página escrito em STYLUS
+// Ele está compilado em CSS no arquivo main.css
+
+/* Barra de notificações*/
+.notifications
+  background-color: var(--notifications__background-color, aquamarine)
+  padding-block: .5rem //5px
+  text-align: center
+  font-weight: var(--font__medium)
+  height: 3.6rem //36px
+
+/* Seções principais*/
+.main
+  &__header
+    background-color: var(--main-header__background-color, #00669f)
+    height: calc(3.6rem + 11.4rem) //notifications + topbar = 150px
+  
+  &__content
+    // ESSE CÁLCULO PODE SER FACILITADO USANDO GRID CSS. VEREMOS ISSO DEPOIS
+    min-height: calc(100% - 15rem - 8rem) // 100% - header - footer
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  &__container
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 2rem
+  
+  &__footer
+    background-color: var(--main-footer__background-color, #00669f)
+    height: 8rem //80px
+    display: flex
+    align-items: stretch
+
+/*TOPBAR*/
+.topbar
+  &__container
+    padding-block: 2rem //20px
+    max-width: var(--layout__max-width)
+    margin-inline: auto
+    height: var(--topbar__height, 11.4rem)
+
+/* Brand */
+.brand
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: flex-start
+
+  &__logo
+    margin-right: 3rem //30px
+
+  &__name
+    color: var(--brand-name__font-color, #FFF)
+    font-weight: var(--font__light)
+
+/* Form */
+.form
+  &__title
+    font-size: 2.8rem //28px
+    margin-bottom: 1.5rem //15px
+  
+  &__submit
+    unset: all
+    width: 100%
+    border: 0
+    height: 4.5rem
+    border-radius: @height
+    font-size: 2.2rem
+    font-weight: var(--font__bold)
+    color: var(--submit-button__font-color, #FFF)
+    background-color: var(--submit-button__background-color, #1CD1B0)
+    margin-block: 2rem
+    text-shadow: 0 0 1px #666
+    cursor: pointer
+  
+  &__link
+    color: var(--form-link__font-color, #00669f)
+    text-decoration: none
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+.input-group
+  display: flex
+  flex-direction: column
+  margin-bottom: 2rem //20px
+
+  label
+    font-size: 1.4rem //14px
+  
+  input:not(.submit)
+    border-radius: .4rem //4px
+    border: var(--input__border, 1px solid #999)
+    padding: 1rem //10px
+    font-size: 1.8rem
+    color: var(--input__font-color, #444)
+    background-color: var(--input__background-color, #FFF)
+  
+/* Footer disclaimer*/
+.footer
+  &__disclaimer
+    text-align: center
+    padding-inline: 1.5rem //15px
+    width: 100%
+    color: var(--footer-disclaimer__font-color, #fff)
+    display: flex
+    align-items: center
+    justify-content: center 
